@@ -5,7 +5,6 @@ import type Animal from "../interface/Animal";
 	providedIn: "root",
 })
 export class ListService {
-  constructor(){}
 	remove(animals: Animal[], animal: Animal) {
 		return animals.filter((element) => animal.name !== element.name);
 	}

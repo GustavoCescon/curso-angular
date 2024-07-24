@@ -1,6 +1,6 @@
 import { CommonModule } from "@angular/common";
 import { Component } from "@angular/core";
-import { RouterOutlet } from "@angular/router";
+import { RouterLink, RouterOutlet } from "@angular/router";
 import { DirectivesComponent } from "./components/directives/directives.component";
 import { EmitterComponent } from "./components/emitter/emitter.component";
 import { EventosComponent } from "./components/eventos/eventos.component";
@@ -14,18 +14,19 @@ import { TwoWayBindingComponent } from "./components/two-way-binding/two-way-bin
 	selector: "app-root",
 	standalone: true,
 	imports: [
-    RouterOutlet,
-    FirstComponentComponent,
-    ParentDataComponent,
-    DirectivesComponent,
-    IfRenderComponent,
-    EventosComponent,
-    EmitterComponent,
-    ListRenderComponent,
-    PipesComponent,
-    CommonModule,
-    TwoWayBindingComponent
-],
+		RouterOutlet,
+		FirstComponentComponent,
+		ParentDataComponent,
+		DirectivesComponent,
+		IfRenderComponent,
+		EventosComponent,
+		EmitterComponent,
+		ListRenderComponent,
+		PipesComponent,
+		CommonModule,
+		TwoWayBindingComponent,
+		RouterLink,
+	],
 	templateUrl: "./app.component.html",
 	styleUrl: "./app.component.css",
 })

@@ -1,0 +1,17 @@
+
+nav{
+  background-color: #bbb;
+}
+
+
+a:hover{
+background-color: #ccc; 
+color: #000
+}
+a:active{
+  color: #000;
+}
+
+a:visited{
+  color: #000;
+}
