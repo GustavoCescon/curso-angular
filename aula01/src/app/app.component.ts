@@ -9,21 +9,23 @@ import { IfRenderComponent } from "./components/if-render/if-render.component";
 import { ListRenderComponent } from "./components/list-render/list-render.component";
 import { ParentDataComponent } from "./components/parent-data/parent-data.component";
 import { PipesComponent } from "./components/pipes/pipes.component";
+import { TwoWayBindingComponent } from "./components/two-way-binding/two-way-binding.component";
 @Component({
 	selector: "app-root",
 	standalone: true,
 	imports: [
-		RouterOutlet,
-		FirstComponentComponent,
-		ParentDataComponent,
-		DirectivesComponent,
-		IfRenderComponent,
-		EventosComponent,
-		EmitterComponent,
-		ListRenderComponent,
-		PipesComponent,
-		CommonModule,
-	],
+    RouterOutlet,
+    FirstComponentComponent,
+    ParentDataComponent,
+    DirectivesComponent,
+    IfRenderComponent,
+    EventosComponent,
+    EmitterComponent,
+    ListRenderComponent,
+    PipesComponent,
+    CommonModule,
+    TwoWayBindingComponent
+],
 	templateUrl: "./app.component.html",
 	styleUrl: "./app.component.css",
 })
