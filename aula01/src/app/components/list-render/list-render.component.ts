@@ -15,6 +15,7 @@ import { ListService } from "./../../service/list.service";
 export class ListRenderComponent {
 	public animals: Animal[];
 	public animalDetails: string;
+	
 	constructor(private listService: ListService) {
 		this.getAnimals();
 
